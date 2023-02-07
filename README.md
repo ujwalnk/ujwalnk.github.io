@@ -1,1 +1,1 @@
-
+A budding explorer. With an open eye & mind towards all special things in nature, technical stuff mankind has created. I keep exploring & thinking about the motive behind such wonderful things & what inspired to create.
