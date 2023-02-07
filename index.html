@@ -2,325 +2,218 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ujwal N K</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ujwal N K</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href='data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-      </svg>'' type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <!-- Font Awesome if you need it
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  -->
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <!--Replace with your tailwind.css once created-->
-
+  <link rel="shortcut icon" href="./res/icon.svg" type="image/x-icon">
 </head>
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
-    style="background-image:url('./res/background.JPG');">
+<body>
 
+  <header class="bg-primary bg-gradient text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-left text-md-center mb-3">
+          <img class="rounded-circle img-fluid" src="./res/profile.jpeg" alt="Profile Photo" />
+        </div>
+        <div class="col-md-9">
+          <h1>Ujwal N K</h1>
+          <h5>Student @ PES University</h5>
+          <p class="border-top pt-3"> A budding explorer. With an open eye & mind towards all special things in nature,
+            technical stuff mankind has created. I keep exploring & thinking about the motive behind such wonderful
+            things & what inspired to create.
 
+            <br>
+          <div class="container">
+            <div class="row p-3">
+              <div class="col-md pb-2 pb-md-0">
+              </div>
+              <div class="col-md text-md-center pb-2 pb-md-0">
+                <i class="bi bi-envelope-at"></i> <a class="link" href="mailto:ujwal.nk@gmail.com"
+                  data-tippy-content="ujwal.nk@gmail.com"
+                  style="text-decoration: none; color: white">ujwal.nk@gmail.com</a>
+                <br><br>
+                <i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/ujwal-nk-7b716a225"
+                  class="text-white ml-2" style="text-decoration: none;">ujwal-nk-7b716a225</a>
 
-    <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
-
-        <!--Main Col-->
-        <div id="profile"
-            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
-
-
-            <div class="p-4 md:p-12 text-center lg:text-left">
-                <!-- Image for mobile view-->
-                <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                    style="background-image: url('./res/profile.JPG')"></div>
-
-                <h1 class="text-3xl font-bold pt-8 lg:pt-0">Ujwal N K</h1>
-                <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg
-                        class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20">
-                        <path
-                            d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
-                    </svg> Student @ PES Univeristy</p>
-                <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"><svg
-                        class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20">
-                        <path
-                            d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
-                    </svg> India, Bengaluru</p>
-                <p class="pt-8 text-sm">&nbsp; A budding explorer. With an open eye & mind towards all special
-                    things in nature, technical stuff mankind has created. <br /> &nbsp; I keep exploring & thinking
-                    about the motive behind such wonderful things & what inspired to create.</p>
-
-                <div class="pt-12 pb-8">
-
-                    <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            class="h-4 fill-current text-green-700 pr-4 bi bi-brush" viewBox="0 0 16 16">
-                            <path
-                                d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.067 6.067 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.118 8.118 0 0 1-3.078.132 3.659 3.659 0 0 1-.562-.135 1.382 1.382 0 0 1-.466-.247.714.714 0 0 1-.204-.288.622.622 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896.126.007.243.025.348.048.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04zM4.705 11.912a1.23 1.23 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.39 3.39 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3.122 3.122 0 0 0 .126-.75l-.793-.792zm1.44.026c.12-.04.277-.1.458-.183a5.068 5.068 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005a.031.031 0 0 1-.007.004zm3.582-3.043.002.001h-.002z" />
-                        </svg>Technology Stack</p>
-                    <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color: #3776AB">
-                            <title>Python</title>
-                            <path
-                                d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
-                        </svg>
-
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color: #E34F26">
-                            <title>HTML5</title>
-                            <path
-                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
-                        </svg>
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color: #1572B6">
-                            <title>CSS3</title>
-                            <path
-                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
-                        </svg>
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color:#F7DF1E">
-                            <title>JavaScript</title>
-                            <path
-                                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
-                        </svg>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 511.998 511.998" style="enable-background:new 0 0 511.998 511.998;" xml:space="preserve" class="h-6 fill-current text-gray-600" style="color: #00979D">
-                        <g>
-                            <path style="fill:#DB380E;" d="M253.464,94.869c-23.658,16.639-50.471,35.498-64.838,66.699
-                                c-24.954,54.435,51.062,113.812,54.311,116.313c0.755,0.581,1.659,0.871,2.56,0.871c0.957,0,1.915-0.327,2.693-0.979
-                                c1.509-1.262,1.937-3.406,1.031-5.152c-0.275-0.53-27.561-53.53-26.547-91.552c0.359-13.243,18.892-28.266,38.512-44.171
-                                c17.97-14.568,38.34-31.079,50.258-50.394c26.164-42.516-2.916-84.322-3.213-84.74c-1.155-1.622-3.287-2.209-5.11-1.41
-                                c-1.821,0.804-2.83,2.773-2.414,4.72c0.059,0.277,5.714,27.923-10.022,56.406C284.203,73.25,269.959,83.268,253.464,94.869z"/>
-                            <path style="fill:#DB380E;" d="M353.137,113.617c1.669-1.257,2.159-3.55,1.15-5.38c-1.011-1.83-3.211-2.637-5.165-1.895
-                                c-4.019,1.528-98.416,37.915-98.416,81.88c0,30.307,12.946,46.317,22.399,58.009c3.708,4.586,6.909,8.546,7.964,11.927
-                                c2.97,9.743-4.066,27.353-7.025,33.317c-0.853,1.714-0.435,3.792,1.016,5.044c0.784,0.677,1.763,1.021,2.743,1.021
-                                c0.834,0,1.672-0.248,2.396-0.752c1.623-1.128,39.667-28.026,32.844-60.433c-2.542-12.318-8.595-21.318-13.936-29.26
-                                c-8.274-12.305-14.25-21.193-5.184-37.609C304.545,150.338,352.65,113.981,353.137,113.617z"/>
-                        </g>
-                        <g>
-                            <path style="fill:#73A1FB;" d="M107.418,298.236c-1.618,4.845-0.854,9.651,2.207,13.903c10.233,14.207,46.48,22.029,102.068,22.029
-                                c0.003,0,0.005,0,0.007,0c7.532,0,15.484-0.148,23.629-0.44c88.875-3.181,121.839-30.869,123.199-32.046
-                                c1.482-1.283,1.878-3.419,0.957-5.147c-0.922-1.727-2.909-2.595-4.808-2.072c-31.301,8.546-89.748,11.58-130.288,11.58
-                                c-45.363,0-68.465-3.268-74.121-5.681c2.902-3.985,20.802-11.101,42.983-15.464c2.12-0.416,3.577-2.374,3.367-4.524
-                                s-2.016-3.79-4.177-3.79C179.439,276.584,114.234,277.628,107.418,298.236z"/>
-                            <path style="fill:#73A1FB;" d="M404.812,269.718c-18.331,0-35.714,9.188-36.446,9.577c-1.695,0.908-2.555,2.852-2.09,4.72
-                                c0.467,1.865,2.144,3.176,4.067,3.178c0.389,0,39.102,0.317,42.608,22.436c3.106,19.082-36.629,50-52.202,60.304
-                                c-1.682,1.113-2.335,3.263-1.554,5.123c0.665,1.583,2.206,2.573,3.868,2.573c0.29,0,0.584-0.03,0.876-0.092
-                                c3.696-0.791,90.406-19.899,81.238-70.384C439.584,276.213,420.138,269.718,404.812,269.718z"/>
-                            <path style="fill:#73A1FB;" d="M345.347,363.755c0.302-1.617-0.371-3.262-1.717-4.207l-20.791-14.563
-                                c-1.014-0.71-2.295-0.933-3.485-0.618c-0.217,0.055-21.959,5.771-53.525,9.276c-12.528,1.405-26.56,2.147-40.582,2.147
-                                c-31.558,0-52.192-3.708-55.197-6.428c-0.398-0.764-0.272-1.111-0.201-1.304c0.546-1.518,3.472-3.322,5.358-4.036
-                                c2.083-0.771,3.206-3.033,2.558-5.157c-0.646-2.127-2.837-3.378-4.999-2.859c-20.856,5.033-31.054,12.071-30.312,20.918
-                                c1.318,15.686,37.65,23.737,68.365,25.865c4.417,0.302,9.194,0.455,14.195,0.455c0.003,0,0.005,0,0.008,0
-                                c51.074,0,116.55-16.025,117.204-16.188C343.825,366.666,345.044,365.375,345.347,363.755z"/>
-                            <path style="fill:#73A1FB;" d="M188.602,397.419c1.575-1.024,2.273-2.971,1.714-4.764c-0.557-1.793-2.234-2.971-4.118-2.946
-                                c-2.795,0.074-27.349,1.182-29.068,16.815c-0.52,4.672,0.818,8.941,3.979,12.686c8.816,10.448,32.614,16.658,72.741,18.984
-                                c4.747,0.285,9.569,0.428,14.334,0.428c51.015,0,85.373-15.973,86.812-16.653c1.395-0.66,2.315-2.031,2.397-3.571
-                                s-0.687-3.001-2.003-3.806l-26.275-16.04c-0.912-0.556-2.003-0.74-3.043-0.527c-0.166,0.035-16.849,3.495-42.026,6.913
-                                c-4.764,0.648-10.73,0.977-17.73,0.977c-25.15,0-53.124-4.109-58.489-6.8C187.749,398.613,187.848,397.975,188.602,397.419z"/>
-                            <path style="fill:#73A1FB;" d="M224.408,486.85c116.854-0.099,179.571-20.88,191.653-33.957c4.277-4.626,4.739-9.006,4.376-11.867
-                                c-0.898-7.04-7.311-11.35-8.038-11.818c-1.754-1.128-4.108-0.833-5.476,0.745c-1.365,1.578-1.397,3.884-0.027,5.461
-                                c0.737,0.948,1.163,2.535-0.992,4.692c-4.83,4.511-53.545,18.204-134.656,22.318c-11.111,0.577-22.765,0.871-34.636,0.873
-                                c-72.623,0-125.772-9.948-132.749-15.744c2.689-3.864,21.489-10.037,41.482-13.529c2.253-0.393,3.775-2.516,3.426-4.776
-                                c-0.349-2.259-2.432-3.814-4.709-3.519c-0.564,0.077-2.478,0.191-4.694,0.327c-32.988,2.014-71.109,6.503-73.098,23.5
-                                c-0.604,5.179,0.935,9.881,4.576,13.973c8.909,10.01,34.516,23.319,153.558,23.319C224.406,486.85,224.406,486.85,224.408,486.85z"
-                                />
-                            <path style="fill:#73A1FB;" d="M439.013,456.578c-1.652-0.764-3.604-0.378-4.836,0.952c-0.171,0.185-17.74,18.556-70.564,29.344
-                                c-20.223,4.052-58.183,6.107-112.826,6.107c-54.745,0-106.838-2.154-107.357-2.176c-2.176-0.106-4.037,1.476-4.333,3.618
-                                c-0.297,2.14,1.083,4.158,3.184,4.658c0.542,0.128,55.135,12.918,129.779,12.918c35.801,0,70.639-2.907,103.548-8.645
-                                c61.361-10.757,65.657-41.183,65.81-42.473C441.632,459.078,440.662,457.342,439.013,456.578z"/>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        </svg>
-                        
-
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color: #2B2728">
-                            <title>MicroPython</title>
-                            <path
-                                d="M0 0h11.509v18.737h.982V0H24v24h-5.263V5.263h-.983V24H6.246V5.263l-.983.035V24H0zm22.246 19.509h-1.404v2.386h1.404z" />
-                        </svg>
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color: #00979D">
-                            <title>Arduino</title>
-                            <path
-                                d="M23.82 12a5.78 5.78 0 0 0-5.88-5.67c-.29 0-.6.02-.9.05-2.52.37-4.2 2.18-5.13 3.57-.95-1.39-2.64-3.2-5.14-3.57-.3-.03-.6-.05-.9-.05A5.78 5.78 0 0 0 0 12a5.78 5.78 0 0 0 5.87 5.67c.3 0 .6-.02.92-.06 2.52-.36 4.2-2.17 5.14-3.56.95 1.39 2.63 3.2 5.14 3.57.31.03.6.05.91.05A5.78 5.78 0 0 0 23.82 12zM6.48 15.6c-.2.04-.43.04-.63.04A3.77 3.77 0 0 1 2 11.98a3.78 3.78 0 0 1 3.86-3.66c.2 0 .42.02.63.04 2.37.35 3.82 2.67 4.31 3.62-.5.95-1.95 3.3-4.31 3.62zM13 12c.49-.93 1.94-3.27 4.31-3.62.2-.04.42-.04.62-.04A3.76 3.76 0 0 1 21.8 12a3.78 3.78 0 0 1-3.86 3.66c-.2 0-.42-.02-.62-.04-2.36-.35-3.82-2.69-4.31-3.62zm-8.79.59h3.54v-1.16H4.22v1.16zm14.13 0h1.19v-1.16h-1.2v-1.19H17.2v1.2H16v1.15h1.2v1.18h1.15V12.6zM24 7.06c0 .3-.22.51-.53.51a.51.51 0 0 1-.53-.5c0-.28.24-.52.53-.52.31 0 .53.22.53.51zm-.91 0c0 .22.16.4.4.4.22 0 .38-.18.38-.4s-.16-.4-.38-.4c-.24-.02-.4.16-.4.4zm.3.26h-.1V6.8l.2-.01c.09 0 .14.01.18.03.04.02.06.06.06.11 0 .06-.04.1-.11.11.05.02.07.06.09.13l.03.13h-.12c-.02-.02-.02-.07-.04-.13-.02-.05-.04-.07-.11-.07h-.05l-.02.22zm.02-.3h.06c.07 0 .1-.01.1-.07 0-.05-.03-.07-.1-.07h-.07v.14h.01z" />
-                        </svg>
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 fill-current text-gray-600" style="color: #00599C">
-                            <title>C++</title>
-                            <path
-                                d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z" />
-                        </svg>
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.000000 150.000000"
-                            preserveAspectRatio="xMidYMid meet" class="h-6 fill-current text-gray-600"
-                            style="color: dodgerblue">
-
-                            <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)" fill="#000000"
-                                stroke="none">
-                                <path d="M181 1489 c-80 -24 -148 -94 -170 -174 -7 -26 -11 -222 -11 -566 0
--599 0 -600 74 -673 76 -77 68 -76 676 -76 471 0 542 2 585 16 55 19 112 71
-140 129 19 38 20 63 20 605 l0 565 -23 43 c-27 51 -70 94 -120 119 -34 17 -75
-18 -587 20 -336 1 -563 -2 -584 -8z m733 -262 c45 -23 97 -58 125 -87 48 -48
-121 -175 121 -210 0 -13 11 -19 46 -24 205 -28 303 -269 177 -434 -58 -76
--223 -151 -403 -183 -97 -17 -363 -17 -460 0 -297 52 -460 174 -460 343 0 116
-47 193 150 246 61 32 66 37 85 91 29 79 56 119 120 180 52 49 147 102 205 114
-14 3 68 4 121 3 89 -1 102 -4 173 -39z" />
-                                <path d="M596 1104 c-11 -29 -6 -81 9 -94 22 -18 45 5 45 45 0 46 -9 65 -30
-65 -10 0 -21 -7 -24 -16z" />
-                                <path d="M704 1107 c-3 -8 -4 -34 -2 -58 2 -36 7 -44 23 -44 18 0 20 7 20 55
-0 44 -3 55 -18 58 -9 2 -20 -3 -23 -11z" />
-                                <path d="M814 1107 c-3 -8 -4 -34 -2 -58 2 -36 7 -44 23 -44 18 0 20 7 20 55
-0 44 -3 55 -18 58 -9 2 -20 -3 -23 -11z" />
-                                <path d="M560 940 c-18 -18 -20 -33 -20 -160 0 -187 -8 -180 183 -180 187 0
-177 -10 177 182 0 188 10 178 -178 178 -129 0 -144 -2 -162 -20z m146 -102
-c15 -23 32 -55 40 -72 l13 -31 1 38 c0 20 -4 37 -9 37 -15 0 -21 30 -11 51 14
-25 56 25 70 0 10 -21 4 -51 -11 -51 -5 0 -9 -29 -9 -65 0 -98 -21 -89 -89 40
-l-21 40 0 -42 c0 -23 5 -45 10 -48 34 -21 -16 -83 -52 -64 -22 12 -24 52 -3
-69 10 9 15 32 15 76 0 78 17 85 56 22z" />
-                                <path d="M384 905 c-10 -26 10 -36 62 -33 41 3 49 6 49 23 0 17 -8 20 -53 23
--41 2 -54 0 -58 -13z" />
-                                <path d="M954 905 c-10 -26 10 -36 62 -33 41 3 49 6 49 23 0 17 -8 20 -53 23
--41 2 -54 0 -58 -13z" />
-                                <path d="M384 795 c-10 -26 10 -36 62 -33 41 3 49 6 49 23 0 17 -8 20 -53 23
--41 2 -54 0 -58 -13z" />
-                                <path d="M954 795 c-10 -26 10 -36 62 -33 41 3 49 6 49 23 0 17 -8 20 -53 23
--41 2 -54 0 -58 -13z" />
-                                <path d="M383 685 c-9 -24 15 -36 67 -33 37 3 45 6 45 23 0 17 -8 20 -53 23
--41 2 -54 0 -59 -13z" />
-                                <path d="M954 685 c-10 -24 5 -35 49 -35 50 0 72 12 64 34 -9 22 -105 23 -113
-1z" />
-                                <path d="M597 553 c-4 -3 -7 -31 -7 -60 0 -51 2 -54 23 -51 18 2 23 10 25 46
-4 52 -19 88 -41 65z" />
-                                <path d="M707 553 c-4 -3 -7 -31 -7 -60 0 -51 2 -54 23 -51 18 2 23 10 25 46
-4 52 -19 88 -41 65z" />
-                                <path d="M812 548 c-14 -14 -16 -76 -3 -96 5 -8 17 -12 27 -10 34 6 29 118 -5
-118 -4 0 -12 -5 -19 -12z" />
-                            </g>
-                        </svg>
-
-                    </div>
-
-                </div>
-                <!-- <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"><svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg> Contact </p> -->
-
-                <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-around">
-                    <a class="link" href="https://github.com/ujwalnk/" data-tippy-content="@ujwalnk"><svg
-                            class="h-6 fill-current text-gray-600 hover:text-green-700" role="img" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <title>GitHub</title>
-                            <path
-                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                        </svg></a>
-                    <a class="link" href="mailto:ujwal.nk@gmail.com" data-tippy-content="ujwal.nk@gmail.com"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            class="h-6 fill-current text-gray-600 hover:text-green-700 bi bi-envelope-paper-fill"
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z" />
-                        </svg></a>
-                    <a class="link" href="https://www.linkedin.com/in/ujwal-nk-7b716a225" data-tippy-content="@ujwalnk"><svg xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            class="h-6 fill-current text-gray-600 hover:text-green-700 bi bi-linkedin"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                        </svg></a>
-                </div>
-
-                <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
-
+                <br><br>
+                <i class="bi bi-github"></i><a href="https://www.linkedin.com/in/ujwal-nk-7b716a225"
+                  class="text-white ml-2" style="text-decoration: none;">ujwalnk</a>
+              </div>
             </div>
-
+          </div>
         </div>
-
-        <!--Img Col-->
-        <div class="w-full lg:w-2/5">
-            <!-- Big profile image for side bar (desktop) -->
-            <img src="./res/profile.JPG"
-                class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
-            <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
-
-        </div>
-
-
-        <!-- Pin to top right corner -->
-        <div class="absolute top-0 right-0 h-12 w-18 p-4">
-            <button class="js-change-theme focus:outline-none">🌙</button>
-        </div>
-
+      </div>
     </div>
+  </header>
 
-    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@4"></script>
-    <script>
-        //Init tooltips
-        tippy('.link', {
-            placement: 'bottom'
-        })
+  <br>
+  <br><br>
 
-        //Toggle mode
-        const toggle = document.querySelector('.js-change-theme');
-        const body = document.querySelector('body');
-        const profile = document.getElementById('profile');
+  <main class="container">
+    <div class="row">
+      <div class="col-md mb-5">
+        <!-- education -->
+        <h2 class="mb-5"><i class="bi bi-mortarboard"></i> Education</h2>
+        <ul>
+          <li>
+            <h6 class="text-primary">Computer Science (Minors) / PES 2021-2025</h6>
+          </li>
+
+          <li>
+            <h6 class="text-primary">Electrical & Electronics (Majors) / PES 2021-2025</h6>
+          </li>
+
+          <li>
+            <h6 class="text-primary">Deeksha PU College 2019-2021</h6>
+          </li>
+
+          <li>
+            <h6 class="text-primary">Rashtrotthana Vidya Kendra</h6>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md mb-5">
+        <!-- education -->
+        <h2 class="mb-5"><i class="bi bi-award"></i> Achivements</h2>
+        <ul>
+          <li>
+            <h6 class="text-primary">2nd Place - EEE Hack / 2022</h6>
+            Active Noise Cancellation Technology - used in Hospitals, Ambulance, Cars
+          </li>
+          <br>
+
+          <li>
+            <h6 class="text-primary">3rd Place - Kodikon Hackathon / 2022</h6>
+            Developed a text-based electronic circuit designer, inspired by markdown & mermaid js - <a
+              href="https://ujwalnk.github.io/CircuitDude/">Circuit Dude</a>
+          </li>
+          <br>
+          <li>
+            <h6 class="text-primary">Young Scientist Award - State Level / 2018</h6>
+          </li>
+
+          <li>
+            <h6 class="text-primary">1st Place - National Level Innovative Model / 2018</h6>
+            Smart Home - Save Electricity + Anti-theft feature by randomly switching on lights at home for a few hours
+            during night. Developed using Arduino, communication through GSM
+          </li>
+          <br>
+
+          <li>
+            <h6 class="text-primary">59th International Rank - National Cyber Olympaid / 2018</h6>
+            10th Zonal Rank - South Zone, India
+          </li>
+          <br>
+          <li>
+            <h6 class="text-primary">1st Place - Amazon-Mediatek Hackathon / 2015</h6>
+            Developed a prototype to secure life in case road accidents / emergencies using Linkit One
+          </li>
 
 
-        toggle.addEventListener('click', () => {
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md mb-5">
+        <!-- skills -->
+        <h2 class="mb-5"><i class="bi bi-brush"></i> Skills</h2>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="100">HTML</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 60%" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100">CSS</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 70%" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 60%" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100">C / C++</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 50%" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100">Java</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 85%" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100">Python</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 85%" aria-valuenow="85"
+            aria-valuemin="0" aria-valuemax="100">Embedded Programming</div>
+        </div>
+        <div class="progress mb-4" style="height:25px;">
+          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 30%" aria-valuenow="30"
+            aria-valuemin="0" aria-valuemax="100">Verilog</div>
+        </div>
+      </div>
+      <div class="col-md">
+        <!-- recent work -->
+        <h2 class="mb-5"><i class="bi bi-clock-history"></i> Recent Work</h2>
+        <div class="row">
+          <div class="col-md mb-3">
+            <h4>TouchTone</h4>
+            <a href="https://ujwalnk.github.io/TouchTone/">
+              <img class="img-fluid img-thumbnail" src="./res/recent/touch-tone.png"
+                alt="Screenshot of Touchtone Webpage">
+            </a>
+            MIDI Interface Music Tool
+          </div>
 
-            if (body.classList.contains('text-gray-900')) {
-                toggle.innerHTML = "☀️";
-                body.classList.remove('text-gray-900');
-                body.classList.add('text-gray-100');
-                profile.classList.remove('bg-white');
-                profile.classList.add('bg-gray-900');
-            } else {
-                toggle.innerHTML = "🌙";
-                body.classList.remove('text-gray-100');
-                body.classList.add('text-gray-900');
-                profile.classList.remove('bg-gray-900');
-                profile.classList.add('bg-white');
 
-            }
-        });
+        </div>
+        <div class="row">
+          <div class="col-md mb-3">
+            <h4>CircuitDude</h4>
+            <a href="https://ujwalnk.github.io/CircuitDude/">
+              <img class="img-fluid img-thumbnail" src="./res/recent/circuit-dude.png"
+                alt="Screenshot of CircuitDude Webpage">
+            </a>
+            JavaScript based schematic diagramming tool to represent circuit using text and code
+          </div>
+          <div class="col-md mb-3">
+            <h4>Flast</h4>
+            <a href="https://ujwalnk.github.io/Flast/">
+              <img class="img-fluid img-thumbnail" src="res/recent/flast.png" alt="Screenshot of the Flast application">
+            </a>
+            Automate network connections on Sophos WiFi Portal
+          </div>
 
-    </script>
+        </div>
+        <div class="row">
+          <div class="col-md mb-3">
+            <h4>Simpli-P</h4>
+            <a href="https://ujwalnk.github.io/Simpli-P/">
+              <img class="img-fluid img-thumbnail" src="res/recent/simpli-p.png" alt="Screenshot of Simpli-P Webpage">
+            </a>
+            Crack the irrational - rational to irrational converter
+          </div>
+          <div class="col-md mb-3">
+            <h4>MoonReader2HTML</h4>
+            <a href="https://github.com/ujwalnk/moonreader2html">
+              <img class="img-fluid img-thumbnail" src="res/recent/moonreader2html.png"
+                alt="Screenshot of MoonReader2HTML sample output">
+            </a>
+            Beautiful & easy to access ebook Highlights
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white-50 text-center mt-5 p-3">
+    &copy; 2023 Ujwal N K
+  </footer>
 
 </body>
 
