@@ -17,3 +17,19 @@ table td {
     vertical-align: middle;
     text-align: center;
 }
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.btm-lyr{
+  background-image: url(./res/wave-haikei.svg);
+}
+
+.top-lyr{
+  background-image: url(./res/wave-haikei-top.svg);
+}
