@@ -1,0 +1,27 @@
+th 
+{
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.vert
+{
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+
+table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
