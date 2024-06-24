@@ -94,3 +94,7 @@ body {
     font-size: 150% !important; 
     padding-bottom: 2%;
 }
+
+.photo{
+    border-radius: 5px !important;
+}

@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="./styles/gallery.css" type="text/css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <div class="container gallery-container">
-        <div class="tz-gallery">
-            <div class="row">
-
-            </div>
-        </div>
+      <div class="tz-gallery">
+        <div class="row"></div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
-        // JS to Randomize the image order
-        let imageData = {
-            "1011107.JPG": "तमसो म ज्योतिर्गमय",
-            "PB240548.JPG": "What do you call a walking Lantern?",
-            "PB240562.JPG": "",
-            "PB240619.JPG": "A bird's eye view of a glowing journey into the night's embrace",
-            "PB240567.JPG": "Kindling hope: Igniting the path for dreams to take flight",
-            "PB240551.JPG": "A tiny flame carrying a boundless aspirations, dissappearing into the infinite expanse of the night sky",
-            "PB240601.JPG": "Peek-a-boo",
-            "1011263.JPG": "",
-            "1011361.JPG": "",
-            "1011396.JPG": "",
-            "1011709.JPG": "",
-            "20231026173901.png": "",
-            "P9253114.JPG": "",
-            "P1597152482463.jpeg": "",
-            "P20170515174053DF.jpg": "",
-            "20211205_121416.png": "",
-            "IMG_20161121_124648.jpg": "",
-            "234905.jpg": "",
-            "PC110632.png": "",
-            "005509348.jpg": "",
-        };
+      // JS to Randomize the image order
+      let imageDataLandscape = {
+        "PC110632.png": "",
+        "PB240551.JPG":
+          "A tiny flame carrying a boundless aspirations, dissappearing into the infinite expanse of the night sky <br/> OLYMPUS E-PL 1 @ 1/200, ISO 3200, f20",
+        "PB240601.JPG": "Peek-a-boo",
+        "1011107.JPG": "तमसो म ज्योतिर्गमय",
+        "1011263.JPG": "",
+        "1011361.JPG": "",
+        "PB240548.JPG": "What do you call a walking Lantern? <br/> OLYMPUS E-PL 1 @ 1/200, ISO 3200, F20",
+        "1011396.JPG": "",
+        "1011709.JPG": "",
+        "P9253114.JPG": "",
+        "PB240619.JPG":
+          "A bird's eye view of a glowing journey into the night's embrace",
+        "P1597152482463.jpeg": "",
+        "20231026173901.png": "",
+        "P20170515174053DF.jpg": "",
+        "20211205_121416.png": "",
+        "IMG_20161121_124648.jpg": "",
+        "234905.jpg": "",
+        "005509348.jpg": "",
+        "20240624.png": "OLYMPUS E-PL 1 @ ISO 100, F20.0, 42.00mm (1/13, 1/50)"
+      };
 
-        // Get the container element
-        const galleryContainer = document.querySelector(".row");
+      let imageDataPortrait = {};
 
-        // Function to shuffle the image paths
-        function shuffleImages(dictionary) {
-            let keys = Object.keys(dictionary);
-            let shuffledKeys = keys.sort(() => Math.random() - 0.5);
+      // Get the container element
+      const galleryContainer = document.querySelector(".row");
 
-            let shuffledDict = {};
-            shuffledKeys.forEach(key => {
-                shuffledDict[key] = dictionary[key];
-            });
+      // Function to shuffle the image paths
+      function shuffleImages(dictionary) {
+        let keys = Object.keys(dictionary);
+        let shuffledKeys = keys.sort(() => Math.random() - 0.5);
 
-            return shuffledDict;
+        let shuffledDict = {};
+        shuffledKeys.forEach((key) => {
+          shuffledDict[key] = dictionary[key];
+        });
+
+        return shuffledDict;
+      }
+
+      // imageData = shuffleImages(imageData);
+      imageData = imageDataLandscape;
+
+      let imageCount = 0;
+
+      // Create and append HTML for each image
+      for (const image in imageData) {
+        const imageElement = document.createElement("img");
+        imageElement.classList.add("photo")
+        imageElement.src = "./res/gallery/" + image;
+        console.log("Image:", image);
+
+        const anchorElement = document.createElement("a");
+        anchorElement.href = "./res/gallery/" + image;
+        anchorElement.title = imageData[image];
+        anchorElement.classList.add("lightbox");
+
+        anchorElement.appendChild(imageElement);
+
+        const divElement = document.createElement("div");
+        if (imageCount % 6 == 0) {
+          divElement.classList.add("col-sm-12");
+          divElement.classList.add("col-md-8");
+        } else {
+          divElement.classList.add("col-sm-6");
+          divElement.classList.add("col-md-4");
         }
+        imageCount++;
+        divElement.appendChild(anchorElement);
 
-        // Randomize the image paths
-        imageData = shuffleImages(imageData);
+        galleryContainer.appendChild(divElement);
+      }
 
-        let imageCount = 0;
-
-        // Create and append HTML for each image
-        for (const image in imageData) {
-            const imageElement = document.createElement("img");
-            imageElement.src = "./res/gallery/" + image;
-            console.log("Image:", image);
-
-            const anchorElement = document.createElement("a");
-            anchorElement.href = "./res/gallery/" + image;
-            anchorElement.title = imageData[image];
-            anchorElement.classList.add("lightbox");
-
-            anchorElement.appendChild(imageElement);
-
-            const divElement = document.createElement("div");
-            if (imageCount % 6 == 0) {
-                divElement.classList.add("col-sm-12");
-                divElement.classList.add("col-md-8");
-            } else {
-                divElement.classList.add("col-sm-6");
-                divElement.classList.add("col-md-4");
-            }
-            imageCount++;
-            divElement.appendChild(anchorElement);
-
-            galleryContainer.appendChild(divElement);
-        }
-
-        baguetteBox.run('.tz-gallery');
+      baguetteBox.run(".tz-gallery");
     </script>
-</body>
-
+  </body>
 </html>
