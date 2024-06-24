@@ -1,102 +1,245 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="./styles/gallery.css" type="text/css">
-</head>
-
-<body>
-    <div class="container gallery-container">
-        <div class="tz-gallery">
-            <div class="row">
-
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ujwal N K- Portfolio</title>
+    <meta
+      name="description"
+      content="Hello there, I'm Sophia Williams – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other." />
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" /> -->
+    <link rel="stylesheet" href="gallery/styles/output.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <!-- Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Start - Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!-- End - Fonts -->
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"></script>
+    <!-- End - Fancybox Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // JS to Randomize the image order
-        let imageData = {
-            "1011107.JPG": "तमसो म ज्योतिर्गमय",
-            "PB240548.JPG": "What do you call a walking Lantern?",
-            "PB240562.JPG": "",
-            "PB240619.JPG": "A bird's eye view of a glowing journey into the night's embrace",
-            "PB240567.JPG": "Kindling hope: Igniting the path for dreams to take flight",
-            "PB240551.JPG": "A tiny flame carrying a boundless aspirations, dissappearing into the infinite expanse of the night sky",
-            "PB240601.JPG": "Peek-a-boo",
-            "1011263.JPG": "",
-            "1011361.JPG": "",
-            "1011396.JPG": "",
-            "1011709.JPG": "",
-            "20231026173901.png": "",
-            "P9253114.JPG": "",
-            "P1597152482463.jpeg": "",
-            "P20170515174053DF.jpg": "",
-            "20211205_121416.png": "",
-            "IMG_20161121_124648.jpg": "",
-            "234905.jpg": "",
-            "PC110632.png": "",
-            "005509348.jpg": "",
-        };
-
-        // Get the container element
-        const galleryContainer = document.querySelector(".row");
-
-        // Function to shuffle the image paths
-        function shuffleImages(dictionary) {
-            let keys = Object.keys(dictionary);
-            let shuffledKeys = keys.sort(() => Math.random() - 0.5);
-
-            let shuffledDict = {};
-            shuffledKeys.forEach(key => {
-                shuffledDict[key] = dictionary[key];
-            });
-
-            return shuffledDict;
-        }
-
-        // Randomize the image paths
-        imageData = shuffleImages(imageData);
-
-        let imageCount = 0;
-
-        // Create and append HTML for each image
-        for (const image in imageData) {
-            const imageElement = document.createElement("img");
-            imageElement.src = "./res/gallery/" + image;
-            console.log("Image:", image);
-
-            const anchorElement = document.createElement("a");
-            anchorElement.href = "./res/gallery/" + image;
-            anchorElement.title = imageData[image];
-            anchorElement.classList.add("lightbox");
-
-            anchorElement.appendChild(imageElement);
-
-            const divElement = document.createElement("div");
-            if (imageCount % 6 == 0) {
-                divElement.classList.add("col-sm-12");
-                divElement.classList.add("col-md-8");
-            } else {
-                divElement.classList.add("col-sm-6");
-                divElement.classList.add("col-md-4");
-            }
-            imageCount++;
-            divElement.appendChild(anchorElement);
-
-            galleryContainer.appendChild(divElement);
-        }
-
-        baguetteBox.run('.tz-gallery');
+      tailwind.config = {
+        content: ["./dist/*.{html,js}"],
+        theme: {
+          extend: {
+            fontFamily: {
+              nothingyoucoulddo: ["Nothing You Could Do", "cursive"],
+              signika: ["Signika", "sans-serif"],
+            },
+          },
+        },
+        plugins: [],
+      };
     </script>
-</body>
+  </head>
 
+  <body
+    class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
+    <!-- Navbar -->
+    <header class="flex w-full overflow-hidden pt-10 pb-1">
+      <!-- Navbar -->
+      <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
+        <div
+          class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
+          <div class="mr-4 md:mr-8">
+            <a href="index.html" class="text-2xl font-signika font-bold"
+              >UJWAL N K
+            </a>
+          </div>
+          <div class="ml-auto md:hidden flex items-center justify-start">
+            <button
+              onclick="menuToggle()"
+              @click="open = !open"
+              class="tap-highlight-transparent text-black dark:text-white w-5 h-5 relative focus:outline-none"
+              @click="open = !open">
+              <span class="sr-only">Open main menu</span>
+              <div
+                class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <span
+                  aria-hidden="true"
+                  class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                  :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                <span
+                  aria-hidden="true"
+                  class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                  :class="{'opacity-0': open } "></span>
+                <span
+                  aria-hidden="true"
+                  class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                  :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+              </div>
+            </button>
+          </div>
+          <div
+            id="menu"
+            class="w-full h-0 transition-all ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center">
+            <ul
+              id="ulMenu"
+              class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
+              <li class="group transition duration-300">
+                <a
+                  href="index.html"
+                  class="font-signika text-2xl tap-highlight-transparent"
+                  >HOME
+                  <span
+                    class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+                </a>
+              </li>
+              <li class="group transition duration-300">
+                <a
+                  href="#"
+                  class="font-signika text-2xl tap-highlight-transparent"
+                  >PORTFOLIO
+                  <span
+                    class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Content -->
+    <div class="container mx-auto">
+      <h1 class="text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
+      <section class="text-neutral-700">
+        <div class="container w-full">
+          <div class="flex flex-wrap w-full"></div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="max-w-screen-xl py-16 mx-auto">
+        <div class="grid grid-cols-1 gap-8 text-center mx-auto">
+          <div>
+            <p class="font-signika"><b>UJWAL N K</b></p>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+              A hobbyist & learning photographer
+            </p>
+            <div class="flex mx-auto">
+              <div
+                class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
+                <a
+                  class="transition duration-300 hover:opacity-75"
+                  href="https://www.linkedin.com/ujwalnk"
+                  target="_blank"
+                  rel="noreferrer">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Script for the LightBox -->
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="gallery/scripts/fade_in.js"></script>
+    <script src="gallery/scripts/menu.js"></script>
+
+    <script>
+      const imageData = [
+        { src: "res/gallery/1011107.JPG", alt: "तमसो म ज्योतिर्गमय" },
+        {
+          src: "res/gallery/PB240548.JPG",
+          alt: "What do you call a walking Lantern?",
+        },
+        { src: "res/gallery/PB240562.JPG", alt: "" },
+        {
+          src: "res/gallery/PB240619.JPG",
+          alt: "A bird's eye view of a glowing journey into the night's embrace",
+        },
+        {
+          src: "res/gallery/PB240567.JPG",
+          alt: "Kindling hope: Igniting the path for dreams to take flight",
+        },
+        {
+          src: "res/gallery/PB240551.JPG",
+          alt: "A tiny flame carrying a boundless aspirations, dissappearing into the infinite expanse of the night sky",
+        },
+        { src: "res/gallery/PB240601.JPG", alt: "Peek-a-boo" },
+        { src: "res/gallery/1011263.JPG", alt: "" },
+        { src: "res/gallery/1011361.JPG", alt: "" },
+        { src: "res/gallery/1011396.JPG", alt: "" },
+        { src: "res/gallery/1011709.JPG", alt: "" },
+        { src: "res/gallery/20231026173901.png", alt: "" },
+        { src: "res/gallery/P9253114.JPG", alt: "" },
+        { src: "res/gallery/P1597152482463.jpeg", alt: "" },
+        { src: "res/gallery/P20170515174053DF.jpg", alt: "" },
+        { src: "res/gallery/20211205_121416.png", alt: "" },
+        { src: "res/gallery/IMG_20161121_124648.jpg", alt: "" },
+        { src: "res/gallery/234905.jpg", alt: "" },
+        { src: "res/gallery/PC110632.png", alt: "" },
+        { src: "res/gallery/005509348.jpg", alt: "" },
+      ];
+
+      const container = document.querySelector(".flex.flex-wrap.w-full");
+
+      // let counter = 0;
+
+      imageData.forEach((image) => {
+        const wrapperDiv = document.createElement("div");
+
+        // counter++;
+        let counter = Math.random() * 10;
+
+        if (counter < 7) {
+          wrapperDiv.className = "w-full md:w-1/5 p-1";
+          // counter = 0;
+        } else if (counter > 7){
+          wrapperDiv.className = "w-full md:w-1/3 p-1";
+        } else {
+          wrapperDiv.className = "w-full md:w-1/4 p-1";
+          // counter = 1;
+        }
+
+        const innerDiv = document.createElement("div");
+        innerDiv.className = "overflow-hidden h-full w-full";
+
+        const link = document.createElement("a");
+        link.href = image.src;
+        link.setAttribute("data-fancybox", "gallery");
+
+        const img = document.createElement("img");
+        img.src = image.src;
+        img.alt = image.alt;
+        img.className =
+          "block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110";
+
+        link.appendChild(img);
+        innerDiv.appendChild(link);
+        wrapperDiv.appendChild(innerDiv);
+
+        container.appendChild(wrapperDiv);
+      });
+    </script>
+  </body>
 </html>
